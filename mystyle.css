@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace, sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(48, 26, 7, 0.575),
+    rgba(4,9,30,0.7)),url(images/Sunset.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display:flex;
+    padding: 2% 5%;
+    justify-content: space-between;
+    align-items:center;
+}
+nav img{
+    width: 200px;
+}
+.navs{
+    flex: 1;
+    text-align:start;
+}
+.navs ul li{
+    list-style: none;
+    display:inline-block;
+    padding: 12px 12px;
+    margin: 1%;
+    position: static;
+}
+.navs ul li a{
+    color:bisque;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.5s ease-in-out;
+}
+.navs ul li a:hover{
+    color: #6f5454;
+}
+.navs ul li:hover{
+    background-color: rgba(208, 185, 185, 0.51);
+    transition: 0.5s;
+}
+.text-box{
+    width:40%;
+    color:bisque;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+.text {
+    flex-basis: 70%;
+    margin-bottom: 5%;
+    text-align:left; 
+    display: flex;
+    font-size: 15px;
+    margin: 10px 0 40px;
+    color: rgb(76, 81, 67);
+    background: rgba(250, 251, 245, 0.69);
+    border-radius: 10px;
+    padding: 25px;
+    cursor: pointer;
+}
+.text img{
+        height: 110px;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 40px;
+      }
+.footer{
+    width:100%;
+    margin-top: 500px;
+    margin-bottom: 10px;
+    position:absolute;
+    text-align: center;
+    padding: 20px 0; 
+    background: #6f5454e4;
+    background-size:contain;
+    border-radius: 10px; 
+}
+.footer h2{
+    margin-bottom:10px;
+    margin-top: 4px;
+    font-weight: 400;
+}
+.footer img{
+    width:30px;
+    height:30px;
+    margin: 0px 15px;
+    cursor: pointer;
+    padding: 20px 0;
+}
+.footer img:hover{
+    background-color: rgb(244, 229, 229);
+    background-size: contain;
+    transition: 0.5s;
+}
+.footer p{
+    margin: 20px 10px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    *{margin:2px;
+    padding:5px;
+    }
+    html,body,h1,p{
+      font-size: 15px;
+      width:100%;
+    }
+   article,aside{
+      position:inherit;
+      padding-top: 20px;
+    padding-bottom: 20px;
+      height:auto;
+      width:auto;
+      right: auto;
+      float:inherit;
+    }
+    .head,#myHeader{
+      width:100%;
+    }
+}

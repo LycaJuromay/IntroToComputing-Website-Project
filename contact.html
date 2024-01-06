@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="description" content="Art Website">
+    <meta name="keywords" content="Rikoshee, Art, Illustration, Commission">
+ 	<meta name="author" content="Rikoshee">
+    <link rel="stylesheet" href="mystyle.css">
+    <link rel="icon" type="image/png" href="images/pic.png" >
+    <title>Rikoshee</title>
+    <style>
+        h1{
+        width:40%;
+        color:rgb(215, 224, 180);
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        }
+        .gals{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,30%);
+        text-align: center;
+        }
+        .gals ul li{
+        list-style: none;
+        display:inline-block;
+        padding: 12px 12px;
+        margin: 1%;
+        position: static;
+        }
+        .gals ul li a{
+        color:bisque;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        background-color: rgb(86, 86, 65);
+        }
+        .gals ul li a:hover{
+         background-color: rgba(208, 185, 185, 0.51);
+        transition: 0.5s;
+         }
+    .text-box{
+    width:40%;
+    color:bisque;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+.cform {
+    flex-basis: 50%;
+    margin-bottom: 5%;
+    text-align:center; 
+    display: flex;
+    font-size: 15px;
+    margin: 10px 0 30px;
+    color: rgb(76, 81, 67);
+    background: rgba(250, 251, 245, 0.69);
+    border-radius: 10px;
+    padding: 30px;
+    padding-left: 40%;
+    padding-right: 10%;
+    cursor: pointer;
+}
+.cform p{
+    text-align:center;
+    margin-top: 50%;
+}
+.cform form{
+    display:inline-block;
+    position:inherit;
+    text-align: center;
+    width: auto;
+    font-size: 20px;
+}
+    </style>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="myweb.html"><img src="images/logoo.png"></a>
+            <div class="navs">
+                <ul>
+                    <li><a href="myweb.html">HOME</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="comms.html">COMMISSION INFO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <h1>C O N T A C T </h1>
+<div class="text-box">
+    <p>For all enquiries, please fill out the form below and we will try get back to you as soon as possible.
+        <br><br>
+        Thank you!</p>
+   <div class="cform">
+<form action="file:///C:/Users/My%20PC/Documents/LYCA%20WEB/thankspage.html">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br>
+  <label for="email">Email Address:</label><br>
+  <input type="text" id="email" name="email" value=""><br>
+  <label for="subject">Subject:</label><br>
+  <input type="text" id="subject" name="subject" value="">
+  <label for="message">Message:</label><br>
+  <input type="text" id="message" name="message" value=""><br>
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+<br><br>
+<p>You'll get into confirmation page once you clicked the submit button.</p>
+    </div>
+ </div>   
+</body>
+</html>
